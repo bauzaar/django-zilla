@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import unicode_literals, division
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(
     name='django-fishbone',
     version='1.0',
+    packages=find_packages(),
     url='https://github.com/silverfix/django-fishbone',
     license='BSD',
     author='Andrea Rabbaglietti',
