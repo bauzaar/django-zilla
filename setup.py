@@ -1,4 +1,7 @@
-from distutils.core import setup
+# -*- coding: utf-8 -*-
+
+from __future__ import unicode_literals, division
+from setuptools import setup
 
 
 setup(
@@ -9,5 +12,8 @@ setup(
     author='Andrea Rabbaglietti',
     author_email = 'silverfix@gmail.com',
     description = 'A bunch of useful django apps',
-    install_requires = ['django==1.8']
+    install_requires = [
+        'django==1.8',
+        'celery'
+    ]
 )

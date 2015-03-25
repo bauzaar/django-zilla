@@ -1,0 +1,62 @@
+{% block label %}
+  {% if get_value %}
+    {% for option_value, option_label in choices %}
+      {% if option_value == get_value %}
+        <label class="control-label" for="{{ html_name }}">{{ option_label }}</label>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <label class="control-label" for="{{ html_name }}">{{ label }}</label>
+  {% endif %}
+{% endblock %}
+
+
+{% block char %}
+  <input id="{{ id_for_label }}" class="form-control" name="{{ html_name }}"
+          {{ widget_attrs }} type="text" {% if value %}value="{{ value }}"{% endif %}>
+{% endblock %}
+
+
+{% block hidden %}
+  <input id="{{ id_for_label }}" name="{{ html_name }}" type="hidden" {% if value %}value="{{ value }}"{% endif %}>
+{% endblock %}
+
+
+{% block password %}
+  <input id="{{ id_for_label }}" class="form-control" name="{{ html_name }}"
+          {{ widget_attrs }} type="password" {% if value %}value="{{ value }}"{% endif %}>
+{% endblock %}
+
+
+{% block checkbox %}
+  <input id="{{ id_for_label }}" name="{{ html_name }}" type="checkbox" class="form-control" {{ widget_attrs }}
+         {% if value %}checked="checked"{% endif %}>
+{% endblock %}
+
+
+{% block radio %}
+  {% for option_value, option_label in choices %}
+    {% if option_value == get_value %}
+      <input id="{{ id }}_{{ forloop.counter0 }}" name="{{ html_name }}" value="{{ option_value }}"
+             type="radio" class="form-control" {{ widget_attrs }}
+             {% if value == option_value %}checked="checked"{% endif %}>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
+
+
+{% block select %}
+  <select id="{{ id_for_label }}" name="{{ html_name }}" class="form-control" {{ widget_attrs }}>
+    {% for option_value, option_label in choices %}
+      <option value="{{ option_value }}" {% if value == option_value %}selected="selected"{% endif %}>
+        {{ option_label }}
+      </option>
+    {% endfor %}
+  </select>
+{% endblock %}
+
+
+{% block error %}
+  <span class="fa form-control-feedback"></span>
+  <span class="field-error"></span>
+{% endblock %}
