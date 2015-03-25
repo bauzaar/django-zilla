@@ -13,7 +13,7 @@ setup(
     author_email = 'silverfix@gmail.com',
     description = 'A bunch of useful django apps',
     install_requires = [
-        'django==1.8',
+        'django>=1.5',
         'celery'
     ]
 )
