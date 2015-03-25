@@ -6,8 +6,8 @@ from celery import states
 from django.core.exceptions import ObjectDoesNotExist
 from django.db import transaction
 from kombu.utils.encoding import safe_repr
-from celery_manager.models import Job
-from utils.datetime_utils import get_utc_now
+from django_fishbone.celery_manager.models import Job
+from django_fishbone.utils.datetime_utils import get_utc_now
 
 
 def _simplify_task_name(task_name):

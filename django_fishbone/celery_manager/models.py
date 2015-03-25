@@ -3,7 +3,7 @@
 from __future__ import unicode_literals, division
 from celery import states
 from django.conf import settings
-from utils.models_abstract import TimedatedModel
+from django_fishbone.utils.models_abstract import TimedatedModel
 from django.db.models import CharField, TextField, BooleanField, DateTimeField
 
 

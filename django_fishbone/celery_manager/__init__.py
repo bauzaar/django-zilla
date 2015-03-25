@@ -10,4 +10,4 @@ app = Celery('bauandrea')
 app.config_from_object('django.conf:settings')
 app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 
-from celery_manager.signals import *
+from django_fishbone.celery_manager.signals import *

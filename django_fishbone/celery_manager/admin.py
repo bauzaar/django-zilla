@@ -2,8 +2,8 @@
 
 from __future__ import unicode_literals, division
 from django.contrib.admin import ModelAdmin, site
-from celery_manager.models import Job
-from utils.admin_mixin import NotAddableMixin
+from django_fishbone.celery_manager.models import Job
+from django_fishbone.utils.admin_mixin import NotAddableMixin
 
 
 class JobAdmin(NotAddableMixin, ModelAdmin):

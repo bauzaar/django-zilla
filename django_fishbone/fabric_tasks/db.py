@@ -6,8 +6,8 @@ from fabric.context_managers import hide, cd
 from fabric.decorators import task
 from fabric.operations import local, os, settings as fab_settings, run, sudo
 from fabric.api import env
-from baubackend.settings import STAGE
-from fabric_tasks._utils import get_ssh_command, ensure_target
+from django_fishbone.baubackend.settings import STAGE
+from django_fishbone.fabric_tasks._utils import get_ssh_command, ensure_target
 
 
 DB = settings.DATABASES['default']

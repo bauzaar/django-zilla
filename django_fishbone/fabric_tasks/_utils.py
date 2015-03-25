@@ -15,7 +15,7 @@ def activate_remote_env():
 
 @contextmanager
 def ensure_target():
-    from fabric_tasks.srv import target_prod
+    from django_fishbone.fabric_tasks.srv import target_prod
     if not getattr(env, 'target_stage', None):
         target_prod()
     yield
