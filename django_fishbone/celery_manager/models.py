@@ -3,11 +3,11 @@
 from __future__ import unicode_literals, division
 from celery import states
 from django.conf import settings
-from django_fishbone.utils.models_abstract import TimedatedModel
-from django.db.models import CharField, TextField, BooleanField, DateTimeField
+from django.db.models import CharField, TextField, BooleanField, DateTimeField, Model
+from django_fishbone.utils.datetime_utils import get_utc_now
 
 
-class Job(TimedatedModel):
+class Job(Model):
     state = CharField(max_length=10, default=states.PENDING)
     task = CharField(max_length=256, db_index=True)
     task_id = CharField(max_length=36, unique=True, db_index=True)
@@ -17,6 +17,8 @@ class Job(TimedatedModel):
     kwargs = TextField(blank=True)
     result = TextField(blank=True)
     scheduled = BooleanField(default=False)
+    timestamp_create = DateTimeField(default=get_utc_now, auto_now_add=True, db_index=True, editable=False)
+    timestamp_modify = DateTimeField(default=get_utc_now, auto_now=True, db_index=True, editable=False)
     timestamp_prerun = DateTimeField(editable=False, null=True, blank=True)
     timestamp_postrun = DateTimeField(editable=False, null=True, blank=True)
 

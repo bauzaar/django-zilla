@@ -8,13 +8,13 @@ from fabric.operations import local
 @task
 def worker():
     """ Start celery worker """
-    print local('celery worker -A baubackend.apps.celery_manager -l INFO')
+    print local('celery worker -A django_fishbone.celery_manager -l INFO')
 
 
 @task
 def beat():
     """ Start celery beat """
-    print local('celery beat -A baubackend.apps.celery_manager -l INFO')
+    print local('celery beat -A django_fishbone.celery_manager -l INFO')
 
 
 @task

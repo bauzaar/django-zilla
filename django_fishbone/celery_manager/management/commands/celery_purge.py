@@ -3,7 +3,8 @@
 from __future__ import unicode_literals, division
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from celery_manager import app
+from django_fishbone.celery_manager import app
+
 
 class Command(BaseCommand):
     help = 'Purge task queue'
