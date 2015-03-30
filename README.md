@@ -5,13 +5,14 @@ A bunch of useful django apps!
 django >= 1.5
 
 ## Settings required (settings.py)
+```
 PROJECT_NAME (e.g. 'bauandrea')
 STATIC_DIST_FILEPATH (e.g. 'baufrontend/static_src/_dist/')
 PROJECT_EPOCH_TIME (e.g. datetime.strptime('13/12/2012', DATE_FORMAT))
 SETTINGS_PATH (e.g. 'baubackend.settings')
+```
 
 ## Quick Start
-
 Do you need to create a fabfile.py into your project root folder
 
 ```python
