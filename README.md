@@ -13,8 +13,28 @@ SETTINGS_PATH (e.g. 'baubackend.settings')
 ```
 
 ## Quick Start
-Do you need to create a fabfile.py into your project root folder
+Do you need to create a celery_manager_app.py into your backend app folder
+```python
+# -*- coding: utf-8 -*-
 
+from __future__ import unicode_literals, division, absolute_import
+import os
+from celery import Celery
+from django.conf import settings
+from baubackend.settings import DJANGO_SETTINGS_MODULE
+
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", DJANGO_SETTINGS_MODULE)
+
+app = Celery(settings.PROJECT_NAME)
+
+app.config_from_object('django.conf:settings')
+app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
+
+from django_fishbone.celery_manager.signals import *
+```
+
+Do you need to create a fabfile.py into your project root folder
 ```python
 # -*- coding: utf-8 -*-
 
