@@ -2,9 +2,7 @@
 
 from __future__ import unicode_literals, division
 from fabric.decorators import task
-from fabric.operations import local, run
-from fabric.state import env
-from fabric_tasks._utils import activate_remote_env
+from fabric.operations import local
 
 
 @task
@@ -15,12 +13,8 @@ def flushsessions():
 
 @task
 def flushcache():
-    """ --> [REMOTE+LOCAL] Flush cache """
-    if not hasattr(env, 'target_stage'):
-        print local('python manage.py flushcache')
-    else:
-        with activate_remote_env():
-            print run('python manage.py flushcache')
+    """ Flush cache """
+    print local('python manage.py flushcache')
 
 
 @task

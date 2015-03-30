@@ -4,6 +4,7 @@ from __future__ import unicode_literals, division
 from StringIO import StringIO
 import csv
 from importlib import import_module
+from django.contrib.auth import get_user_model
 from django.contrib.auth.models import AnonymousUser
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponse
@@ -49,11 +50,10 @@ def get_sessionstore_class():
 
 
 def get_user_from_session_id(session_id):
-    from baubackend.apps.account.models import MyUser
     SessionStore = get_sessionstore_class()
     try:
         session_data = SessionStore(session_key=session_id)
-        return MyUser.objects.get(id=session_data.get('_auth_user_id'))
+        return get_user_model().objects.get(id=session_data.get('_auth_user_id'))
     except ObjectDoesNotExist:
         return AnonymousUser()
 

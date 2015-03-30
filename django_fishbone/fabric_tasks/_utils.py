@@ -2,15 +2,7 @@
 
 from __future__ import unicode_literals, division
 from contextlib import contextmanager
-from fabric.context_managers import shell_env, cd, prefix
 from fabric.state import env
-
-
-@contextmanager
-def activate_remote_env():
-    with shell_env(BAUSTAGE=env.target_stage, DJANGO_SETTINGS_MODULE='baubackend.settings.%s' % env.target_stage), \
-         cd('/srv/www/bauandrea/'), prefix('source /srv/env/bauandrea/bin/activate'):
-        yield
 
 
 @contextmanager

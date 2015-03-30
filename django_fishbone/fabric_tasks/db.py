@@ -6,7 +6,6 @@ from fabric.context_managers import hide, cd
 from fabric.decorators import task
 from fabric.operations import local, os, settings as fab_settings, run, sudo
 from fabric.api import env
-from django_fishbone.baubackend.settings import STAGE
 from django_fishbone.fabric_tasks._utils import get_ssh_command, ensure_target
 
 
@@ -96,25 +95,26 @@ def create_user():
 def fetch():
     """ --> [REMOTE] Align DB/migrations/media from target """
     with ensure_target():
+        from importlib import import_module
+        settings_remote = import_module(name='%s.%s' % (settings.SETTINGS_PATH, env.target_stage))
+        db_remote = settings_remote.DATABASES['default']
+
         for prefix in ('media', 'migrations'):
-            dirname_local = '%s_bauzaar_%s' % (prefix, STAGE)
-            dirname_remote = '%s_bauzaar_%s' % (prefix, env.target_stage)
+            dirname_local = '%s_%s' % (prefix, DB['NAME'])
+            dirname_remote = '%s_%s' % (prefix, db_remote['NAME'])
             print local('rsync --delete -azvvo '
                         '--exclude documenti '
                         '--exclude documenti_store '
                         '--exclude referenza_datafeed '
-                        '-e "%s" %s:/srv/www/bauandrea/%s/ %s/'
-                        % (get_ssh_command(), env.host_string, dirname_remote, dirname_local))
+                        '-e "%s" %s:/srv/www/%s/%s/ %s/'
+                        % (settings.PROJECT_NAME, get_ssh_command(), env.host_string,
+                           dirname_remote, dirname_local))
 
-        with cd('/srv/www/bauandrea/'):
-            from importlib import import_module
-
-            settings_remote = import_module(name='baubackend.settings.%s' % env.target_stage)
-            db_remote = settings_remote.DATABASES['default']
+        with cd('/srv/www/%s/' % settings.PROJECT_NAME):
             print run('pg_dump --username=%s --host=%s -Fc %s > temp.dump' \
                       % (db_remote['USER'], db_remote['HOST'], db_remote['NAME']))
-            print local('scp -P %s -i %s -r -q %s:bauandrea/temp.dump .' %
-                        (env.port, env.key_filename, env.host_string))
+            print local('scp -P %s -i %s -r -q %s:%s/temp.dump .' %
+                        (env.port, env.key_filename, settings.PROJECT_NAME, env.host_string))
             print sudo('rm -f temp.dump')
             print drop()
             print create()

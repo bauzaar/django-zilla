@@ -149,7 +149,7 @@ class ButtonableHeaderMixin(object):
 
     def get_urls(self):
         from django.conf.urls import url, patterns
-        from django.utils.functional import update_wrapper
+        from functools import update_wrapper
 
         # Define a wrapper view
         def wrap(view):
@@ -259,25 +259,3 @@ class DifferentInlinesMixin(object):
     def add_view(self, request, form_url='', extra_context=None):
         self.inlines = self.create_inlines
         return super(DifferentInlinesMixin, self).add_view(request)
-
-
-class EventoStoricoMixin(NotAddableMixin, NotDeletableMixin, DifferentFieldsMixin):
-    extra = 0
-    max_num = 0
-    ordering = ('-id',)
-    create_readonly_fields = modify_readonly_fields = ('timestamp_creazione', 'descrizione')
-    create_fieldsets = (
-        (None, {
-            'fields': ('descrizione',)
-        }),
-    )
-    modify_fieldsets = (
-        (None, {
-            'fields':
-                ('descrizione', 'timestamp_creazione')
-        }),
-    )
-    template = 'admin/custom_fragments/eventostorico_tab_inline.html'
-
-    class Media:
-        css = {'all': ('admin/css/eventostorico_tab_inline.css',)}

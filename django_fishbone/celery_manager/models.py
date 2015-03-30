@@ -17,8 +17,8 @@ class Job(Model):
     kwargs = TextField(blank=True)
     result = TextField(blank=True)
     scheduled = BooleanField(default=False)
-    timestamp_create = DateTimeField(default=get_utc_now, auto_now_add=True, db_index=True, editable=False)
-    timestamp_modify = DateTimeField(default=get_utc_now, auto_now=True, db_index=True, editable=False)
+    timestamp_created = DateTimeField(default=get_utc_now, auto_now_add=True, db_index=True, editable=False)
+    timestamp_modified = DateTimeField(default=get_utc_now, auto_now=True, db_index=True, editable=False)
     timestamp_prerun = DateTimeField(editable=False, null=True, blank=True)
     timestamp_postrun = DateTimeField(editable=False, null=True, blank=True)
 

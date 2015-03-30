@@ -5,8 +5,9 @@ from fabric.context_managers import hide, settings as fab_settings
 from fabric.decorators import task
 from fabric.operations import local
 from fabric.api import env
-from fabric_tasks._utils import ensure_target
-from fabric_tasks.git import get_current_branch
+from django.conf import settings
+from django_fishbone.fabric_tasks._utils import ensure_target
+from django_fishbone.fabric_tasks.git import get_current_branch
 
 
 @task
@@ -28,12 +29,11 @@ def target_prod():
 @task
 def deploy():
     """ --> [REMOTE] Deploy to target env """
-    DIST_FILEPATH = 'baufrontend/static_src/_dist/'
     with ensure_target():
         local("git add --all .")
-        local("git add -f %s" % DIST_FILEPATH)
+        local("git add -f %s" % settings.STATIC_DIST_FILEPATH)
         with fab_settings(hide('warnings'), warn_only=True):
-            local("git commit -m 'deploy bauandrea/%s'" % env.target_stage)
-        local("git rm -r --cached %s" % DIST_FILEPATH)
+            local("git commit -m 'deploy %s/%s'" % (settings.PROJECT_NAME, env.target_stage))
+        local("git rm -r --cached %s" % settings.STATIC_DIST_FILEPATH)
         local("git push %s %s -f" % (env.target_stage, get_current_branch()))
         local("git commit --amend -a --no-edit --allow-empty")

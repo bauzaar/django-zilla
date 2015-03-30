@@ -3,7 +3,7 @@
 from __future__ import unicode_literals, division
 from celery import Task
 from django.conf import settings
-from django.db import transaction
+from django_fishbone import transaction_handler
 
 
 def _partition(iterable, n):
@@ -45,6 +45,6 @@ class ManagedTask(Task):
 
     def __call__(self, *args, **kwargs):
         if kwargs.pop('_force_run', self.run_condition):
-            with transaction.commit_on_success():
+            with transaction_handler():
                 return super(ManagedTask, self).__call__(*args, **kwargs)
         return 'Dry-Run due to condition'

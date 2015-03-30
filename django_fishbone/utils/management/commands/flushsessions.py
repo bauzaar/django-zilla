@@ -2,15 +2,15 @@
 
 from __future__ import unicode_literals, division
 from django.core.management.base import BaseCommand
-from django.db import transaction
 from django.core import cache
-from utils import redis_utils
+from django_fishbone import transaction_handler
+from django_fishbone.utils import redis_utils
 
 
 class Command(BaseCommand):
     help = 'Flush sessions'
 
-    @transaction.commit_on_success
+    @transaction_handler()
     def handle(self, *args, **options):
         cache_session_bucket = cache.get_cache('session_bucket')
         cache_session_bucket.clear()

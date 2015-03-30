@@ -4,8 +4,8 @@ from __future__ import unicode_literals, division
 from celery.signals import task_prerun, task_postrun, task_success, task_failure, before_task_publish
 from celery import states
 from django.core.exceptions import ObjectDoesNotExist
-from django.db import transaction
 from kombu.utils.encoding import safe_repr
+from django_fishbone import transaction_handler
 from django_fishbone.celery_manager.models import Job
 from django_fishbone.utils.datetime_utils import get_utc_now
 
@@ -16,7 +16,7 @@ def _simplify_task_name(task_name):
 
 @before_task_publish.connect
 def before_task_publish_handler(body, *options, **kwoptions):
-    with transaction.commit_on_success():
+    with transaction_handler():
         task_name = _simplify_task_name(body['task'])
         headers = kwoptions['headers']
         task_id = body['id']
@@ -28,7 +28,7 @@ def before_task_publish_handler(body, *options, **kwoptions):
 
 @task_prerun.connect
 def prerun_handler(sender, task, task_id, args, kwargs, *options, **kwoptions):
-    with transaction.commit_on_success():
+    with transaction_handler():
         try:
             job_Locked = Job.objects.select_for_update().get(task_id=task_id)
         except Job.DoesNotExist:  # in case of local run: apply()
@@ -43,7 +43,7 @@ def prerun_handler(sender, task, task_id, args, kwargs, *options, **kwoptions):
 
 @task_postrun.connect
 def postrun_handler(sender, task, task_id, signal, state, retval, *args, **kwargs):
-    with transaction.commit_on_success():
+    with transaction_handler():
         try:
             job_Locked = Job.objects.select_for_update().get(task_id=task_id)
         except Job.DoesNotExist:
@@ -55,7 +55,7 @@ def postrun_handler(sender, task, task_id, signal, state, retval, *args, **kwarg
 
 @task_success.connect
 def success_handler(sender, result, *args, **kwargs):
-    with transaction.commit_on_success():
+    with transaction_handler():
         try:
             job_Locked = Job.objects.select_for_update().get(task_id=sender.request.id)
         except Job.DoesNotExist:
@@ -66,7 +66,7 @@ def success_handler(sender, result, *args, **kwargs):
 
 @task_failure.connect
 def failure_handler(sender, task_id, exception, traceback, einfo, *args, **kwargs):
-    with transaction.commit_on_success():
+    with transaction_handler():
         try:
             job_Locked = Job.objects.select_for_update().get(task_id=task_id)
         except Job.DoesNotExist:
