@@ -4,7 +4,7 @@ from __future__ import unicode_literals, division
 from urlparse import urljoin
 from django.conf import settings
 from django.utils.encoding import force_text
-from utils.crypto import encrypt
+from django_fishbone.utils.crypto import encrypt
 
 
 def build_auto_login_url(url, cliente):
