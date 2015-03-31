@@ -2,11 +2,14 @@
 
 from __future__ import unicode_literals, division
 from setuptools import setup, find_packages
+import subprocess
 
+
+git_short_hash = subprocess.check_output(["git rev-parse --short HEAD"])
 
 setup(
     name='django-fishbone',
-    version='0.1',
+    version=git_short_hash,
     packages=find_packages(),
     url='https://github.com/silverfix/django-fishbone',
     license='BSD',
