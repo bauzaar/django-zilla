@@ -2,10 +2,10 @@
 
 from __future__ import unicode_literals, division
 from setuptools import setup, find_packages
-import subprocess
+from fabric.operations import local
 
 
-git_short_hash = subprocess.check_output(["git rev-parse --short HEAD"])
+git_short_hash = local('git rev-parse --short HEAD', capture=True)
 
 setup(
     name='django-fishbone',
