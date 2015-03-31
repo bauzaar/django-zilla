@@ -106,7 +106,7 @@ def fetch():
                         '--exclude documenti '
                         '--exclude documenti_store '
                         '--exclude referenza_datafeed '
-                        '-e "%s" %s:/srv/www/%s/%s/ %s/'
+                        '-e "%s" %s:/srv/www/%s/ %s/ %s/'
                         % (settings.PROJECT_NAME, get_ssh_command(), env.host_string,
                            dirname_remote, dirname_local))
 
