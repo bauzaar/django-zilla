@@ -106,15 +106,14 @@ def fetch():
                         '--exclude documenti '
                         '--exclude documenti_store '
                         '--exclude referenza_datafeed '
-                        '-e "%s" %s:/srv/www/%s/ %s/ %s/'
-                        % (settings.PROJECT_NAME, get_ssh_command(), env.host_string,
-                           dirname_remote, dirname_local))
+                        '-e "%s" %s:/srv/www/%s/%s/ %s/'
+                        % (get_ssh_command(), env.host_string, settings.PROJECT_NAME, dirname_remote, dirname_local))
 
         with cd('/srv/www/%s/' % settings.PROJECT_NAME):
             print run('pg_dump --username=%s --host=%s -Fc %s > temp.dump' \
                       % (db_remote['USER'], db_remote['HOST'], db_remote['NAME']))
             print local('scp -P %s -i %s -r -q %s:%s/temp.dump .' %
-                        (env.port, env.key_filename, settings.PROJECT_NAME, env.host_string))
+                        (env.port, env.key_filename, env.host_string, settings.PROJECT_NAME))
             print sudo('rm -f temp.dump')
             print drop()
             print create()
