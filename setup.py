@@ -9,7 +9,7 @@ git_short_hash = local('git rev-parse --short HEAD', capture=True)
 
 setup(
     name='django-fishbone',
-    version=git_short_hash,
+    version='0.5.dev%s' % git_short_hash,
     packages=find_packages(),
     url='https://github.com/silverfix/django-fishbone',
     license='BSD',
