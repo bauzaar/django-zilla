@@ -6,11 +6,11 @@ import subprocess
 import shlex
 
 
-git_short_hash = subprocess.check_output(shlex.split('git rev-parse --short HEAD')).strip()
+GIT_HEAD_REV = subprocess.check_output(shlex.split('git rev-parse --short HEAD')).strip()
 
 setup(
     name='django-fishbone',
-    version='0.5.dev#%s' % git_short_hash,
+    version='0.5.dev#%s' % GIT_HEAD_REV,
     packages=find_packages(),
     url='https://github.com/silverfix/django-fishbone',
     license='BSD',
