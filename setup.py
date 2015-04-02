@@ -18,6 +18,7 @@ setup(
     description = 'A bunch of useful django apps',
     install_requires = [
         'django>=1.5',
-        'celery'
+        'celery',
+        'fabric'
     ]
 )

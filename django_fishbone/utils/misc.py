@@ -4,6 +4,7 @@ from __future__ import unicode_literals, division
 from StringIO import StringIO
 import csv
 from importlib import import_module
+import os
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import AnonymousUser
 from django.core.exceptions import ObjectDoesNotExist
@@ -65,3 +66,11 @@ def price_to_int(price):
 def import_object(object_path):
     module_path, object_name = object_path.rsplit('.', 1)
     return getattr(import_module(module_path), object_name)
+
+
+def find_manage_py(start_dir):
+    current_dir = start_dir
+    while True:
+        current_dir = os.path.dirname(current_dir)
+        if 'manage.py' in os.listdir(current_dir):
+            return current_dir
