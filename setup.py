@@ -3,9 +3,10 @@
 from __future__ import unicode_literals, division
 from setuptools import setup, find_packages
 import subprocess
+import shlex
 
 
-git_short_hash = subprocess.check_output('git rev-parse --short HEAD').strip()
+git_short_hash = subprocess.check_output(shlex.split('git rev-parse --short HEAD')).strip()
 
 setup(
     name='django-fishbone',
