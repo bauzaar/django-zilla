@@ -67,7 +67,7 @@ def drop():
 
 
 @task
-def dumpdata(filepath=settings.FIXTURE_PATH):
+def dumpdata(filepath=getattr(settings, 'FIXTURE_PATH', '')):
     """ Dump initial_data.json by default DB """
     if os.path.isfile(filepath):
         os.remove(filepath)
@@ -76,7 +76,7 @@ def dumpdata(filepath=settings.FIXTURE_PATH):
 
 
 @task
-def loaddata(filepath=settings.FIXTURE_PATH):
+def loaddata(filepath=getattr(settings, 'FIXTURE_PATH', '')):
     """ Load initial_data.json in default DB """
     if os.path.isfile(filepath):
         print local("python manage.py loaddata %s" % filepath)
