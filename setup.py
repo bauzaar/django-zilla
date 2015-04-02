@@ -2,14 +2,14 @@
 
 from __future__ import unicode_literals, division
 from setuptools import setup, find_packages
-from fabric.operations import local
+import subprocess
 
 
-git_short_hash = local('git rev-parse --short HEAD', capture=True)
+git_short_hash = subprocess.check_output('git rev-parse --short HEAD').strip()
 
 setup(
     name='django-fishbone',
-    version='0.5.dev%s' % git_short_hash,
+    version='0.5.dev#%s' % git_short_hash,
     packages=find_packages(),
     url='https://github.com/silverfix/django-fishbone',
     license='BSD',
@@ -18,7 +18,5 @@ setup(
     description = 'A bunch of useful django apps',
     install_requires = [
         'django>=1.5',
-        'celery',
-        'fabric'
     ]
 )
