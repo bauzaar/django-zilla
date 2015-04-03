@@ -60,7 +60,7 @@ fab_django.settings_module(DJANGO_SETTINGS_MODULE)
 @task
 def shell():
     """ Open a django shell through IPython """
-    print local("python %s shell" % os.path.join(settings.PROJECT_ROOT, 'manage.py'))
+    print local("python %s shell" % os.path.join(settings.BASE_DIR, 'manage.py'))
 
 
 from django_fishbone.fabric_tasks import celery, db, migration, misc, srv, git
