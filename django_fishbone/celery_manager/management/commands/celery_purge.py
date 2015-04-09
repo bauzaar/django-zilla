@@ -2,7 +2,7 @@
 
 from __future__ import unicode_literals, division
 from django.core.management.base import BaseCommand
-from django_fishbone import transaction_handler
+from django_fishbone.utils.legacy_layer import transaction_handler
 from django_fishbone.celery_manager import app
 
 

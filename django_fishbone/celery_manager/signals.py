@@ -5,7 +5,7 @@ from celery.signals import task_prerun, task_postrun, task_success, task_failure
 from celery import states
 from django.core.exceptions import ObjectDoesNotExist
 from kombu.utils.encoding import safe_repr
-from django_fishbone import transaction_handler
+from django_fishbone.utils.legacy_layer import transaction_handler
 from django_fishbone.celery_manager.models import Job
 from django_fishbone.utils.datetime_utils import get_utc_now
 

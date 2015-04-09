@@ -3,7 +3,7 @@
 from __future__ import unicode_literals, division
 from celery import Task
 from django.conf import settings
-from django_fishbone import transaction_handler
+from django_fishbone.utils.legacy_layer import transaction_handler
 
 
 def _partition(iterable, n):

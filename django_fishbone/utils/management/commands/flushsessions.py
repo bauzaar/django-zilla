@@ -3,7 +3,7 @@
 from __future__ import unicode_literals, division
 from django.core.management.base import BaseCommand
 from django.core import cache
-from django_fishbone import transaction_handler
+from django_fishbone.utils.legacy_layer import transaction_handler
 from django_fishbone.utils import redis_utils
 
 
