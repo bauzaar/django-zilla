@@ -4,7 +4,6 @@ from __future__ import unicode_literals, division
 from celery import states
 from django.conf import settings
 from django.db.models import CharField, TextField, BooleanField, DateTimeField, Model
-from django_fishbone.utils.datetime_utils import get_utc_now
 
 
 class Job(Model):
@@ -17,8 +16,8 @@ class Job(Model):
     kwargs = TextField(blank=True)
     result = TextField(blank=True)
     scheduled = BooleanField(default=False)
-    timestamp_created = DateTimeField(default=get_utc_now, auto_now_add=True, db_index=True, editable=False)
-    timestamp_modified = DateTimeField(default=get_utc_now, auto_now=True, db_index=True, editable=False)
+    timestamp_created = DateTimeField(auto_now_add=True, db_index=True, editable=False)
+    timestamp_modified = DateTimeField(auto_now=True, db_index=True, editable=False)
     timestamp_prerun = DateTimeField(editable=False, null=True, blank=True)
     timestamp_postrun = DateTimeField(editable=False, null=True, blank=True)
 

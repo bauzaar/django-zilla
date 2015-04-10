@@ -3,13 +3,13 @@
 from __future__ import unicode_literals, division
 from django.core.management.base import BaseCommand
 from django.contrib.contenttypes.models import ContentType
-from django_fishbone.utils.legacy_layer import transaction_handler
+from django.db import transaction
 
 
 class Command(BaseCommand):
     help = 'Clean-up ContentType DB Model'
 
-    @transaction_handler()
+    @transaction.atomic()
     def handle(self, *args, **options):
         for c in ContentType.objects.all():
             if not c.model_class():

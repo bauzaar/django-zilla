@@ -3,14 +3,14 @@
 from __future__ import unicode_literals, division
 from django.core.management.base import BaseCommand
 from django.core import cache
-from django_fishbone.utils.legacy_layer import transaction_handler
+from django.db import transaction
 from django_fishbone.utils import redis_utils
 
 
 class Command(BaseCommand):
     help = 'Flush cache'
 
-    @transaction_handler()
+    @transaction.atomic()
     def handle(self, *args, **options):
         cache_default = cache.get_cache('default')
         cache_default.clear()

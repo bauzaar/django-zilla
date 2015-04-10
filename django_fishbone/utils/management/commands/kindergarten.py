@@ -3,13 +3,13 @@
 from __future__ import unicode_literals, division
 import traceback
 from django.core.management.base import BaseCommand
-from django_fishbone.utils.legacy_layer import transaction_handler
+from django.db import transaction
 
 
 class Command(BaseCommand):
     help = 'Generic command for various stuff'
 
-    @transaction_handler
+    @transaction.atomic
     def handle(self, limit=None, *args, **options):
         try:
             pass
