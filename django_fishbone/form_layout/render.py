@@ -13,7 +13,7 @@ def render_block_to_string(template_name, block_name, d=None, context_instance=N
     else:
         context_instance = Context(d)
 
-    to_visit = copy(loader.get_template(template_name).nodelist)
+    to_visit = copy(loader.get_template(template_name).template.nodelist)
     while to_visit:
         current_node = to_visit.pop()
         if isinstance(current_node, BlockNode) and current_node.name == block_name:
