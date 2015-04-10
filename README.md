@@ -2,7 +2,7 @@
 A bunch of useful django apps!
 
 ## Supported django version
-django >= 1.5
+django >= 1.8
 
 ## Settings required (settings.py)
 ```
