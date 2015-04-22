@@ -17,7 +17,7 @@ def get_csv_response(request, rows, filename_prefix, delimiter=b';'):
     writer = csv.writer(csv_io, delimiter=delimiter)
     for row in rows:
         writer.writerow([unicode(item).encode(settings.CSV_ENCODING, errors='ignore') for item in row])
-    response = HttpResponse(content=csv_io.getvalue(), mimetype='text/csv')
+    response = HttpResponse(content=csv_io.getvalue(), content_type='text/csv')
     csv_io.close()
     timestamp_creazione__gte = request.GET.get('timestamp_creazione__gte')
     timestamp_creazione__lte = request.GET.get('timestamp_creazione__lte')

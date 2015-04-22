@@ -11,7 +11,7 @@ def make_json_response(d=None, redirect_url=None):
         d = {}
     if redirect_url:
         d['redirect_url'] = force_text(redirect_url)
-    return HttpResponse(json.dumps(d), mimetype="application/json")
+    return HttpResponse(json.dumps(d), content_type="application/json")
 
 
 def make_json_response_form(forms, additional_data=None, redirect_url=None):
