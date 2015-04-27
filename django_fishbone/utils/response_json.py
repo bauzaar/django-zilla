@@ -2,7 +2,7 @@
 
 from __future__ import unicode_literals, division
 import json
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.utils.encoding import force_text
 
 
