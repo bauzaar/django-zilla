@@ -48,7 +48,7 @@ def postrun_handler(sender, task, task_id, signal, state, retval, *args, **kwarg
             job_Locked = Job.objects.select_for_update().get(task_id=task_id)
         except Job.DoesNotExist:
             raise ObjectDoesNotExist
-        job_Locked.state = state
+        job_Locked.state = state or 'UNKNOWN'
         job_Locked.timestamp_postrun = get_utc_now()
         job_Locked.save()
 
