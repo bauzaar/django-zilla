@@ -29,13 +29,12 @@ def before_task_publish_handler(body, *options, **kwoptions):
 @task_prerun.connect
 def prerun_handler(sender, task, task_id, args, kwargs, *options, **kwoptions):
     with transaction.atomic():
-        try:
-            job_Locked = Job.objects.select_for_update().get(task_id=task_id)
-        except Job.DoesNotExist:  # in case of local run: apply()
-            job_Locked = Job.objects.select_for_update().create(
-                task=_simplify_task_name(task.name), args=safe_repr(args), kwargs=safe_repr(kwargs),
-                task_id=task_id, category=task.category
-            )
+        job_Locked = Job.objects.select_for_update().get_or_create(task_id=task_id, defaults={
+            'task': _simplify_task_name(task.name),
+            'args': safe_repr(args),
+            'kwargs': safe_repr(kwargs),
+            'category': task.category
+        })
         job_Locked.state = states.STARTED
         job_Locked.timestamp_prerun = get_utc_now()
         job_Locked.save()

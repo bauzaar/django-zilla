@@ -8,14 +8,14 @@ from django.conf import settings
 
 
 @task
-def initmigrations():
+def init():
     """ Makes migrations """
     with fab_settings(hide('warnings'), warn_only=True):
         print local('python manage.py makemigrations %s' % ' '.join(settings.APPS_TO_MIGRATE))
 
 
 @task
-def makemigrations():
+def make():
     """ Makes migrations """
     with fab_settings(hide('warnings'), warn_only=True):
         print local('python manage.py makemigrations')
