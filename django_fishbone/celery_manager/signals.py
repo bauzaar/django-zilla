@@ -29,7 +29,7 @@ def before_task_publish_handler(body, *options, **kwoptions):
 @task_prerun.connect
 def prerun_handler(sender, task, task_id, args, kwargs, *options, **kwoptions):
     with transaction.atomic():
-        job_Locked = Job.objects.select_for_update().get_or_create(task_id=task_id, defaults={
+        job_Locked, created = Job.objects.select_for_update().get_or_create(task_id=task_id, defaults={
             'task': _simplify_task_name(task.name),
             'args': safe_repr(args),
             'kwargs': safe_repr(kwargs),
