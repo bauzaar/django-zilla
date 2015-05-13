@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="249ef9a8-3656-46cd-be8f-29ed8b1e2a6c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/utils/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\admin.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/admin.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\base_task.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/base_task.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\helpers.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/helpers.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\management\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/commands/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\management\commands\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/management/commands/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\management\commands\celery_purge.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/management/commands/celery_purge.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\migrations\0001_initial.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/migrations/0001_initial.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\migrations\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/migrations/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\models.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/models.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\signals.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/signals.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\tasks.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/tasks.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\_utils.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/_utils.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\celery.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/celery.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\db.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/db.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\git.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/git.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\migration.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/migration.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\misc.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/misc.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\srv.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/srv.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/form_layout/templatetags/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\render.py" afterPath="$PROJECT_DIR$/django_zilla/form_layout/render.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\templates\form_layout\fields.html" afterPath="$PROJECT_DIR$/django_zilla/form_layout/templates/form_layout/fields.html" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\templates\form_layout\form_helpers.html" afterPath="$PROJECT_DIR$/django_zilla/form_layout/templates/form_layout/form_helpers.html" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\templatetags\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/form_layout/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\templatetags\form_layout.py" afterPath="$PROJECT_DIR$/django_zilla/form_layout/templatetags/form_layout.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\admin_mixin.py" afterPath="$PROJECT_DIR$/django_zilla/utils/admin_mixin.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\crypto.py" afterPath="$PROJECT_DIR$/django_zilla/utils/crypto.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\datetime_utils.py" afterPath="$PROJECT_DIR$/django_zilla/utils/datetime_utils.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\commands\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/management/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\commands\clean_contenttypes.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/commands/clean_contenttypes.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\commands\flushcache.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/commands/flushcache.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\commands\flushsessions.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/commands/flushsessions.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\commands\kindergarten.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/commands/kindergarten.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\managers.py" afterPath="$PROJECT_DIR$/django_zilla/utils/managers.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\misc.py" afterPath="$PROJECT_DIR$/django_zilla/utils/misc.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\models_abstract.py" afterPath="$PROJECT_DIR$/django_zilla/utils/models_abstract.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\redis_utils.py" afterPath="$PROJECT_DIR$/django_zilla/utils/redis_utils.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\response_json.py" afterPath="$PROJECT_DIR$/django_zilla/utils/response_json.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\templatetags\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/utils/templatetags/__init__.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\templatetags\utils.py" afterPath="$PROJECT_DIR$/django_zilla/utils/templatetags/utils.py" />
+      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\url.py" afterPath="$PROJECT_DIR$/django_zilla/utils/url.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
+    <ignored path="django-zilla.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="django-zilla" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="_utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/fabric_tasks/_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding>
+                <element signature="e#25#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="celery.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/fabric_tasks/celery.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/fabric_tasks/db.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2875">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="srv.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/fabric_tasks/srv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1012">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_layout.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/form_layout/templatetags/form_layout.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flushcache.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/utils/management/commands/flushcache.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flushsessions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/utils/management/commands/flushsessions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models_abstract.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/utils/models_abstract.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="url.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/utils/url.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+              <folding>
+                <element signature="e#25#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
+              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/helpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="322">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="celery_purge.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/management/commands/celery_purge.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signals.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/signals.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1817">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/django_fishbone/celery_manager/admin.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/celery_manager/helpers.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/celery_manager/management/commands/celery_purge.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/celery_manager/signals.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/celery_manager/tasks.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/fabric_tasks/_utils.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/fabric_tasks/celery.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/fabric_tasks/db.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/fabric_tasks/srv.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/form_layout/templatetags/form_layout.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/utils/management/commands/flushcache.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/utils/management/commands/flushsessions.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/utils/models_abstract.py" />
+        <option value="$PROJECT_DIR$/django_fishbone/utils/url.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django-zilla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django-zilla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django-zilla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="C:/Python27/venvs/dummy/Scripts/python.exe" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-zilla" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-zilla" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-zilla" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-zilla" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-zilla" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-zilla" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="django-zilla" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="249ef9a8-3656-46cd-be8f-29ed8b1e2a6c" name="Default" comment="" />
+      <created>1431532008012</created>
+      <option name="number" value="Default" />
+      <updated>1431532008012</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.65845466" sideWeight="0.84833866" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26205787" sideWeight="0.50281423" order="0" side_tool="true" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281075" sideWeight="0.63612" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35834268" sideWeight="0.43783495" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15916398" sideWeight="0.49832028" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26091826" sideWeight="0.6564845" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281075" sideWeight="0.34351555" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43071964" sideWeight="0.5042135" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17577706" sideWeight="0.5016797" order="5" side_tool="true" content_ui="tabs" x="777" y="78" width="366" height="893" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30459127" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919614" sideWeight="0.49718574" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39977604" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33146697" sideWeight="0.47052518" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48712206" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" x="14" y="688" width="1866" height="294" />
+      <window_info id="Gulp" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2073955" sideWeight="0.4721329" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4031355" sideWeight="0.5653805" order="6" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="322">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/management/commands/celery_purge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/signals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1817">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/fabric_tasks/_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="e#25#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/fabric_tasks/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/fabric_tasks/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2875">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/fabric_tasks/srv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1012">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/form_layout/templatetags/form_layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/utils/management/commands/flushcache.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/utils/management/commands/flushsessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/utils/models_abstract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_zilla/utils/url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="e#25#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+  </component>
+</project>

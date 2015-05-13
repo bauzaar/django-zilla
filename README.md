@@ -1,4 +1,4 @@
-# django-fishbone
+# django-zilla
 A bunch of useful django apps!
 
 ## Supported django version
@@ -31,7 +31,7 @@ app = Celery(settings.PROJECT_NAME)
 app.config_from_object('django.conf:settings')
 app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 
-from django_fishbone.celery_manager.signals import *
+from django_zilla.celery_manager.signals import *
 ```
 
 Do you need to create a fabfile.py into your project root folder
@@ -63,5 +63,5 @@ def shell():
     print local("python %s shell" % os.path.join(settings.BASE_DIR, 'manage.py'))
 
 
-from django_fishbone.fabric_tasks import celery, db, migration, misc, srv, git
+from django_zilla.fabric_tasks import celery, db, migration, misc, srv, git
 ```
