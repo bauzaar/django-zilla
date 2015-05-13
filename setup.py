@@ -9,10 +9,10 @@ import shlex
 GIT_HEAD_REV = subprocess.check_output(shlex.split('git rev-parse --short HEAD')).strip()
 
 setup(
-    name='django-fishbone',
+    name='django-zilla',
     version='0.5.dev#%s' % GIT_HEAD_REV,
     packages=find_packages(),
-    url='https://github.com/silverfix/django-fishbone',
+    url='https://github.com/codezilla-it/django-zilla',
     license='BSD',
     author='Andrea Rabbaglietti',
     author_email = 'silverfix@gmail.com',

@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="249ef9a8-3656-46cd-be8f-29ed8b1e2a6c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/utils/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\admin.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/admin.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\base_task.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/base_task.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\helpers.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/helpers.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\management\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/commands/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\management\commands\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/management/commands/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\management\commands\celery_purge.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/management/commands/celery_purge.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\migrations\0001_initial.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/migrations/0001_initial.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\migrations\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/migrations/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\models.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/models.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\signals.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/signals.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\celery_manager\tasks.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/tasks.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\_utils.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/_utils.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\celery.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/celery.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\db.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/db.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\git.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/git.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\migration.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/migration.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\misc.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/misc.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\fabric_tasks\srv.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/srv.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/form_layout/templatetags/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\render.py" afterPath="$PROJECT_DIR$/django_zilla/form_layout/render.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\templates\form_layout\fields.html" afterPath="$PROJECT_DIR$/django_zilla/form_layout/templates/form_layout/fields.html" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\templates\form_layout\form_helpers.html" afterPath="$PROJECT_DIR$/django_zilla/form_layout/templates/form_layout/form_helpers.html" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\templatetags\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/form_layout/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\form_layout\templatetags\form_layout.py" afterPath="$PROJECT_DIR$/django_zilla/form_layout/templatetags/form_layout.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\admin_mixin.py" afterPath="$PROJECT_DIR$/django_zilla/utils/admin_mixin.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\crypto.py" afterPath="$PROJECT_DIR$/django_zilla/utils/crypto.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\datetime_utils.py" afterPath="$PROJECT_DIR$/django_zilla/utils/datetime_utils.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/fabric_tasks/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\commands\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/celery_manager/management/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\commands\clean_contenttypes.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/commands/clean_contenttypes.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\commands\flushcache.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/commands/flushcache.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\commands\flushsessions.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/commands/flushsessions.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\management\commands\kindergarten.py" afterPath="$PROJECT_DIR$/django_zilla/utils/management/commands/kindergarten.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\managers.py" afterPath="$PROJECT_DIR$/django_zilla/utils/managers.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\misc.py" afterPath="$PROJECT_DIR$/django_zilla/utils/misc.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\models_abstract.py" afterPath="$PROJECT_DIR$/django_zilla/utils/models_abstract.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\redis_utils.py" afterPath="$PROJECT_DIR$/django_zilla/utils/redis_utils.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\response_json.py" afterPath="$PROJECT_DIR$/django_zilla/utils/response_json.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\templatetags\__init__.py" afterPath="$PROJECT_DIR$/django_zilla/utils/templatetags/__init__.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\templatetags\utils.py" afterPath="$PROJECT_DIR$/django_zilla/utils/templatetags/utils.py" />
-      <change type="MOVED" beforePath="C:\Users\Silverfix\Desktop\_proj\django-zilla\django_fishbone\utils\url.py" afterPath="$PROJECT_DIR$/django_zilla/utils/url.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="django-zilla.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -167,10 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1656">
               <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
               <folding />
             </state>
@@ -180,11 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_zilla/celery_manager/admin.py">
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.52460986" vertical-offset="0" max-vertical-offset="833">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -254,6 +209,7 @@
         <option value="$PROJECT_DIR$/django_fishbone/utils/models_abstract.py" />
         <option value="$PROJECT_DIR$/django_fishbone/utils/url.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
@@ -483,8 +439,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.65845466" sideWeight="0.84833866" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26205787" sideWeight="0.50281423" order="0" side_tool="true" content_ui="combo" />
@@ -665,6 +621,14 @@
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52460986" vertical-offset="0" max-vertical-offset="833">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
