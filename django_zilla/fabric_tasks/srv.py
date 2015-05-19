@@ -34,6 +34,6 @@ def deploy():
         local("git add -f %s" % settings.STATIC_DIST_FILEPATH)
         with fab_settings(hide('warnings'), warn_only=True):
             local("git commit -m 'deploy %s/%s'" % (settings.PROJECT_NAME, env.target_stage))
-        local("git rm -r --cached %s" % settings.STATIC_DIST_FILEPATH)
+            local("git rm -r --cached %s" % settings.STATIC_DIST_FILEPATH)
         local("git push %s %s -f" % (env.target_stage, get_current_branch()))
         local("git commit --amend -a --no-edit --allow-empty")
