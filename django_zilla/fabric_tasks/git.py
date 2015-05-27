@@ -45,8 +45,8 @@ def delete_branch(branch_name):
     """ Delete branch """
     if branch_name == get_current_branch():
         abort('You have to switch to another branch')
-    local("git branch -D %s" % branch_name)
     with fab_settings(warn_only=True):
+        local("git branch -D %s" % branch_name)
         local("git push origin --delete %s" % branch_name)
 
 
