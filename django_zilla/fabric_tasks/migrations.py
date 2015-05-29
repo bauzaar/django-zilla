@@ -20,6 +20,11 @@ def make():
     with fab_settings(hide('warnings'), warn_only=True):
         print local('python manage.py makemigrations')
 
+@task
+def show():
+    """ Shows migrations """
+    with fab_settings(hide('warnings'), warn_only=True):
+        print local('python manage.py showmigrations')
 
 @task
 def migrate():
