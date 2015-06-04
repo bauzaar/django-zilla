@@ -13,8 +13,8 @@ from django.utils.safestring import mark_safe
 
 
 class DistinctQuerysetMixin(object):
-    def queryset(self, request):
-        return super(DistinctQuerysetMixin, self).queryset(request).distinct()
+    def get_queryset(self, request):
+        return super(DistinctQuerysetMixin, self).get_queryset(request).distinct()
 
 
 class WarningableMixin(object):
