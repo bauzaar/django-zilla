@@ -99,14 +99,15 @@ def fetch():
         settings_remote = import_module(name='%s.%s' % (settings.SETTINGS_PATH, env.target_stage))
         db_remote = settings_remote.DATABASES['default']
 
-        dirname_local = 'media_%s' % DB['NAME']
-        dirname_remote = 'media_%s' % db_remote['NAME']
+        media_dirname = os.path.split(settings.MEDIA_ROOT)[-1]
         print local('rsync --delete -azvvo '
                     '--exclude documenti '
                     '--exclude documenti_store '
                     '--exclude referenza_datafeed '
                     '-e "%s" %s:/srv/www/%s/%s/ %s/'
-                    % (get_ssh_command(), env.host_string, settings.PROJECT_NAME, dirname_remote, dirname_local))
+                    % (get_ssh_command(), env.host_string,
+                       settings.PROJECT_NAME,
+                       media_dirname, media_dirname))
 
         with cd('/srv/www/%s/' % settings.PROJECT_NAME):
             print run('pg_dump --username=%s --host=%s -Fc %s > temp.dump' \
