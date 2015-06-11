@@ -49,7 +49,7 @@ def create():
         if exists():
             print "Cannot create DB %s: it exists already" % DB['NAME']
         else:
-            print psql_cmd('"CREATE DATABASE %s WITH ENCODING=\'UTF8\' CONNECTION LIMIT=-1"' % DB['NAME'])
+            print psql_cmd('CREATE DATABASE %s WITH ENCODING=\'UTF8\' CONNECTION LIMIT=-1' % DB['NAME'])
     else:
         print "Unknown DB Engine"
 
@@ -61,7 +61,7 @@ def drop():
         if not exists():
             print "Cannot drop DB %s: it doesn't exist" % DB['NAME']
         else:
-            print psql_cmd('"drop database %s"' % DB['NAME'])
+            print psql_cmd('drop database %s' % DB['NAME'])
     else:
         print "Unknown DB Engine"
 
@@ -101,9 +101,9 @@ def fetch():
 
         media_dirname = os.path.split(settings.MEDIA_ROOT)[-1]
         print local('rsync --delete -azvvo '
-                    '--exclude documenti '
-                    '--exclude documenti_store '
-                    '--exclude referenza_datafeed '
+                    '--exclude documenti ' # TODO
+                    '--exclude documenti_store ' # TODO
+                    '--exclude referenza_datafeed ' # TODO
                     '-e "%s" %s:/srv/www/%s/%s/ %s/'
                     % (get_ssh_command(), env.host_string,
                        settings.PROJECT_NAME,
