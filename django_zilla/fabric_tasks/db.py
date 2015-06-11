@@ -36,10 +36,16 @@ def exists():
 
 
 @task
+def shell(user=DB['USER']):
+    """ Open PostgreSQL shell using proper django settings """
+    return local('psql --username=%s --dbname=postgres --host=%s' % (user, DB['HOST']))
+
+
+@task
 def psql_cmd(cmd, user=DB['USER']):
     """ Issues a command to psql using proper django settings """
-    return local('psql --username=%s --dbname=postgres --host=%s --command="%s"'
-                 % (user, DB['HOST'], cmd))
+    return local(
+        'psql --username=%s --dbname=postgres --host=%s --command="%s"' % (user, DB['HOST'], cmd))
 
 
 @task
