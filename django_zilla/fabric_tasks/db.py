@@ -38,7 +38,7 @@ def exists():
 @task
 def psql_cmd(cmd, user=DB['USER']):
     """ Issues a command to psql using proper django settings """
-    return local('psql --username=%s --dbname=postgres --host=%s --command=%s'
+    return local('psql --username=%s --dbname=postgres --host=%s --command="%s"'
                  % (user, DB['HOST'], cmd))
 
 
