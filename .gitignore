@@ -18,4 +18,5 @@ Thumbs.db
 vendor
 /static
 Thumbs.db
+django_zilla.egg-info
 .DS_STORE
