@@ -15,7 +15,7 @@ def get_current_branch():
 
 
 @task
-def push(remote=''):
+def push(remote='origin'):
     """ Push to origin """
     local("git push %s --tags %s" % (remote, get_current_branch()))
 
