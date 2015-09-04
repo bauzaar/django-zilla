@@ -30,7 +30,9 @@ def target_prod():
 def deploy():
     """ --> [REMOTE] Deploy to target env """
     with ensure_target():
-        local("git add --all .")
+        # Avoid pushing dumps & other rubbish.
+        # Only push up to the last explicit commit
+        # local("git add --all .")
         local("git add -f %s" % settings.STATIC_DIST_FILEPATH)
         with fab_settings(hide('warnings'), warn_only=True):
             local("git commit -m 'deploy %s/%s'" % (settings.PROJECT_NAME, env.target_stage))

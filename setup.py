@@ -12,7 +12,7 @@ setup(
     name='django-zilla',
     version='0.5.dev#%s' % GIT_HEAD_REV,
     packages=find_packages(),
-    url='https://github.com/codezilla-it/django-zilla',
+    url='https://github.com/bauzaar/django-zilla',
     license='BSD',
     author='Andrea Rabbaglietti',
     author_email = 'silverfix@gmail.com',
