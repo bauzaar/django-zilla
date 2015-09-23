@@ -11,20 +11,20 @@ from django_zilla.fabric_tasks.git import get_current_branch
 
 
 @task
-def gulp_prod():
-    """ --> [LOCAL] Set host target to 'test' """
+def prod():
+    """ --> [LOCAL] Compiles production frontend assets """
     local('gulp prod')
 
 
 @task
-def gulp_fetch():
+def fetch():
     """ --> [LOCAL] Updates gulp-zilla's repository """
     lcd(settings.GULP_ZILLA_SRC_PATH)
     local('git pull')
 
 
 @task
-def gulp_update():
+def update():
     """ --> [LOCAL] Updates gulp-zilla's repository """
     gulp_fetch()
     local('npm install')

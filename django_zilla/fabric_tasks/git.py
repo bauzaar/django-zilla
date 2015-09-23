@@ -23,7 +23,7 @@ def push(remote='origin'):
 @task
 def pull(params=''):
     """ Pull files from the repo -> clean """
-    local("git add --all .")
+    # local("git add --all .") #  FUCK!
     if has_uncommitted_changes():
         abort('There are uncommited changes')
     with fab_settings(warn_only=True):
@@ -35,7 +35,7 @@ def pull(params=''):
 @task
 def commit(message=None):
     """ Add all files in the repo -> commit """
-    local("git add --all .")
+    # local("git add --all .") #  FUCK!
     with fab_settings(warn_only=True):
         local("git commit -m '%s'" % message or 'no-msg commit')
 
