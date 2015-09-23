@@ -23,5 +23,4 @@ def fetch():
 @task
 def update():
     """ --> [LOCAL] Installs or updates gulp-zilla's dependencies """
-    with lcd(settings.GULP_ZILLA_SRC_PATH):
-        local('gulp install')
+    local('gulp install')
