@@ -44,6 +44,7 @@ class ManagedTask(Task):
         for chunk in _partition(iterable, n_chunks):
             self.apply_async(args=[chunk]+args, kwargs=kwargs)
 
+    def __call__(self, *args, **kwargs):
         if kwargs.pop('_force_run', self.run_condition):
             if not self.atomic:
                 return super(ManagedTask, self).__call__(*args, **kwargs)
