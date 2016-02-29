@@ -20,6 +20,7 @@ class ManagedTask(Task):
     abstract = True
     category = settings.JOB_DEFAULT_CATEGORY
     run_condition = True
+    atomic = True
 
     def apply(self, args=None, kwargs=None, link=None, link_error=None, **options):
         if not settings.CELERY_ENABLED:
@@ -43,8 +44,10 @@ class ManagedTask(Task):
         for chunk in _partition(iterable, n_chunks):
             self.apply_async(args=[chunk]+args, kwargs=kwargs)
 
-    def __call__(self, *args, **kwargs):
         if kwargs.pop('_force_run', self.run_condition):
+            if not self.atomic:
+                return super(ManagedTask, self).__call__(*args, **kwargs)
+
             with transaction.atomic():
                 return super(ManagedTask, self).__call__(*args, **kwargs)
         return 'Dry-Run due to condition'
